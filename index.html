@@ -58,7 +58,7 @@
         <div class="row row-main">
             <div class="col-12 col-lg-6 card mx-auto mbr-form" data-form-type="formoid">
 <!--Formbuilder Form-->
-<form action="https://mobirise.eu/" method="POST" class="mbr-form form-with-styler form-wrap" data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true" value="yujDIy8hM9EeMmN4xy8Su8heQIU5qVI8BxfpvNkeIHf2Ki2km5M4G1BT+yWZpKH3FcioGPdZd9jiTEWdRPQi3oX4CXPQ6Rwfmp4zvB5JeDQKw/Kfv1Fjnc2f1El1D43H.6qCrmyYpgosHt+7O9AL5LtxyzsIUD0gNc29iEElvVqpm6pnqL4BkxiE3LIO9xPq2UQnRqqAR72rYrVS1hHn8sPwD3R8ViYdgOLZY5/m+6zUNsWGae/HZPu8eCAV60Ep4">
+<form action="https://mobirise.eu/" method="POST" class="mbr-form form-with-styler form-wrap" data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true" value="Ah3k2XTtzXyivjevanGQk8Rgxi3FN+aT0PNPQamtpr6Ahw2/sAqIhBOceuUSqJRWv2wk8tVEAEpe+dEMwq+2VBgHoMkmrN/sjT2+rYhBUC/8YWEdW2/Ag/3st2qnG6dZ.W1v6uL/T8Wp23gNecL/AFu6kgbYOBxwLJZntyhw6x9qbMkDNI8KV/PbznQbBlIaoJB3ZTnN68VcXF00C8efZDdESCUbqY/0lSsnBPnTzHGoEQU0danQgusjBB0UtTIao">
 <div class="row">
 <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Спасибо за заявку в розыгрыше! Инструкция придет на указанный вами номер телефона. Желаем вам получить свой приз!</div>
 <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12"> Oops...! some problem! </div>
@@ -111,7 +111,7 @@
         <style>
             /* временные костыли, убрать! */
             .well input.form-control{
-            padding-left: 200px;
+            padding-left: 10px;
             }
             .well input.ac_input {
                 width: 443px;
@@ -337,6 +337,48 @@
 
             body {
                 background-color: rgb(237, 237, 237);
+            }
+
+            .btn-primary {
+                background-color: rgba(var(--decor_color));
+                border-color: rgba(var(--decor_color));
+            }
+
+            /* Переопределение библиотек стилей */
+            .btn-primary:hover {
+                background-color: rgba(var(--decor_color), 0.95);
+                border-color: rgba(var(--decor_color), 1);
+            }
+            .btn-primary:active {
+                background-color: rgba(var(--decor_color), 0.95);
+                border-color: rgba(var(--decor_color), 1);
+            }
+            .btn-primary:focus {
+                background-color: rgba(var(--decor_color), 0.95);
+                border-color: rgba(var(--decor_color), 1);
+            }
+            .btn-primary:active:focus {
+                background-color: rgba(var(--decor_color), 0.95);
+                border-color: rgba(var(--decor_color), 1);
+            }
+            .btn-primary:active:hover {
+                background-color: rgba(var(--decor_color), 0.95);
+                border-color: rgba(var(--decor_color), 1);
+            }
+            .btn-primary[disabled]:hover {
+                background-color: rgba(var(--decor_color), 0.7);
+                border-color: rgba(var(--decor_color), 0.7);
+            }
+            .form-control:focus {
+                border-color: rgba(var(--decor_color), 0.55);
+                -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(var(--decor_color), 0.4);
+                box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(var(--decor_color), 0.4);
+            }
+            .k_file_url {
+                color: rgba(var(--decor_color), 0.85);
+            }
+            .k_file_url:hover {
+                color: rgba(var(--decor_color), 1);
             }
 
             @media (max-width: 1000px) {
@@ -720,6 +762,7 @@ qst_input.value=document.getElementById('k_input_field_130_20430').value;
               if (window.k_qst130_def_value20420) $('#k_input_field_130_20420').val(window.k_qst130_def_value20420);
   if (window.k_qst130_def_value20430) $('#k_input_field_130_20430').val(window.k_qst130_def_value20430);
   if (window.k_qst130_def_value20440) $('#k_input_field_130_20440').val(window.k_qst130_def_value20440);
+  if (window.k_qst130_def_value20450) $('#k_input_field_130_20450').val(window.k_qst130_def_value20450);
 
         });
     </script>
@@ -781,6 +824,25 @@ qst_input.value=document.getElementById('k_input_field_130_20430').value;
 </div>
 </div>
 
+<div class="form-group row">
+<label class="control-label k_field_name">Изображения</label>
+<div class="form-field">
+    
+                <span class="k_file_url" id="add_file_url_130_20450">
+                    <div class="k_file_form">
+                    <form method="post" enctype="multipart/form-data" action="https://crm129588.clientbase.ru/questionare.php?qst_id=130&amp;k_rand=" id="k_sbmt_file_130_20450" was_upload="0" target="k_frame_upload_130">
+                    <input type="hidden" name="csrf" value="">
+                    <div class="k_file_form2">
+                    <input type="file" name="k_lnk_add_file[]" size="1" onclick="if (k_upload_in_progress) {alert('Файл еще не загружен, дождитесь загрузки файла.');return false;}" onchange="k_add_file(this);" i_c="_130_20450" field_id="20450" multiple="multiple">
+                    </div>
+                    </form>
+                    </div>
+                    Добавить
+                </span>
+            
+</div>
+</div>
+
         
 
         <div class="form-group row" align="center">
@@ -791,9 +853,13 @@ qst_input.value=document.getElementById('k_input_field_130_20430').value;
     </div>
 
     <div class="form-copyright">
-        <a class="form-copyright__link" href="">
+        <a class="form-copyright__link" href="https://clientbase.ru/">
+            <img class="form-copyright__logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" loading="lazy" data-src="https://crm129588.clientbase.ru/images/form_logo.svg">
         </a>
-        <a class="form-copyright__link" href="">
+        <a class="form-copyright__link" href="https://clientbase.ru/">
+            <p class="form-copyright__text">
+                Данная форма создана на платформе Кб
+            </p>
         </a>
     </div>
 
