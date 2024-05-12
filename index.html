@@ -58,7 +58,7 @@
         <div class="row row-main">
             <div class="col-12 col-lg-6 card mx-auto mbr-form" data-form-type="formoid">
 <!--Formbuilder Form-->
-<form action="https://mobirise.eu/" method="POST" class="mbr-form form-with-styler form-wrap" data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true" value="uU/xjLnUZpvo5raR5VXkKruPNRw+xmxYTOfrK7BEf6JRhuSdX5/VAjdaRrKPvEKIIbH22PAEtmJ3sG85FcOQ8UPRMFh2FjH1qQ9SKO+MEiZibH66pUm+U3qL8aoEIRkB.yir547baeJFHwbC+HWKkIXdI+rpPHGyJ31olMTzO5G1bvnVKMagrsMA61DJllmTIBDwuzrmyrVf+0hHWYYkv+7j4lE0yM1WfrKR9GDi4DOXfp/7oyAcM90WoNylMGS7+">
+<form action="https://mobirise.eu/" method="POST" class="mbr-form form-with-styler form-wrap" data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true" value="yujDIy8hM9EeMmN4xy8Su8heQIU5qVI8BxfpvNkeIHf2Ki2km5M4G1BT+yWZpKH3FcioGPdZd9jiTEWdRPQi3oX4CXPQ6Rwfmp4zvB5JeDQKw/Kfv1Fjnc2f1El1D43H.6qCrmyYpgosHt+7O9AL5LtxyzsIUD0gNc29iEElvVqpm6pnqL4BkxiE3LIO9xPq2UQnRqqAR72rYrVS1hHn8sPwD3R8ViYdgOLZY5/m+6zUNsWGae/HZPu8eCAV60Ep4">
 <div class="row">
 <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Спасибо за заявку в розыгрыше! Инструкция придет на указанный вами номер телефона. Желаем вам получить свой приз!</div>
 <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12"> Oops...! some problem! </div>
@@ -104,6 +104,706 @@
         </div>
     </div>
 </section>
+
+<div id="custom-html-9">
+    
+        <link rel="stylesheet" href="https://crm129588.clientbase.ru/themes/clientbase/libs/bootstrap/css/bootstrap.min.css">
+        <style>
+            /* временные костыли, убрать! */
+            .well input.form-control{
+            padding-left: 200px;
+            }
+            .well input.ac_input {
+                width: 443px;
+            }
+
+            .well input.hasDatepicker {
+                width: 435px;
+            }
+
+            .well select.form-control{
+            padding-left: 5px;
+            width: 476px !important;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            appearance: none !important;
+            }
+            .well textarea.form-control{
+            resize: vertical;
+            font-family: Arial;
+            padding-top: 10px;
+            padding-left: 10px;
+            height: 100px;
+            }
+            .well {
+                min-width: 530px;
+            }
+
+            .well .input-group {
+                position: relative;
+            }
+
+            .select-group {
+                position: relative;
+            }
+
+            .well .input-group select.form-control {
+                position: relative;
+                background: none;
+                border-radius: 4px;
+            }
+
+            .well .input-group select.form-control::-ms-expand {
+                display: none;
+            }
+
+            .custom-select {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: white;
+                border-radius: 5px;
+            }
+
+            .pseudo-btn {
+                position: absolute;
+                border-left: 1px solid #ccc;
+                width: 1px;
+                height: 98%;
+                right: 34px;
+                top: 1px;
+            }
+
+            .select-caret {
+                display: inline-block;
+                width: 0;
+                height: 0;
+                position: absolute;
+                top: 46%;
+                right: -20px;
+                vertical-align: middle;
+                border-top: 4px dashed;
+                border-top: 4px solid\9;
+                border-right: 4px solid transparent;
+                border-left: 4px solid transparent;
+            }
+
+            textarea.form-control {
+                resize: vertical;
+            }
+
+            .ui-datepicker-trigger {
+                opacity: 0 !important;
+                position: absolute !important;
+                top: -10000px !important;
+            }
+
+            .ui-timepicker-div .ui_tpicker_second_label {
+                float: left;
+                display: inline-block;
+                margin-top: 2px;
+                margin-left: 4px;
+                height: 14px;
+            }
+
+            .ui-timepicker-div .ui_tpicker_time_label {
+                float: left;
+                margin-left: 4px;
+                // height: 14px;
+                margin-bottom: 5px;
+            }
+
+            .ui-timepicker-div .ui_tpicker_hour_label {
+                float: left;
+                display: inline-block;
+                margin-left: 4px;
+                // height: 14px;
+                margin-bottom: 5px;
+            }
+
+            .ui-timepicker-div .ui_tpicker_minute_label {
+                float: left;
+                display: inline-block;
+                margin-left: 4px;
+                // height: 14px;
+                margin-bottom: 5px;
+            }
+
+                .ui-timepicker-div .ui_tpicker_hour {
+                    height: 14px;
+                    margin-bottom: 5px;
+                }
+
+                .ui-timepicker-div .ui_tpicker_minute {
+                    height: 14px;
+                    margin-bottom: 5px;
+                }
+
+            .ui-timepicker-div .ui_tpicker_time {
+                /*float:left;*/
+                margin-left: 5.5em;
+                // height: 14px;
+                margin-bottom: 5px;
+            }
+
+            .ui-timepicker-div .ui-slider.ui-slider-horizontal {
+                width: 10.5em;
+                height: 12px;
+                margin-left: 2.3em;
+            }
+
+            .ui-timepicker-div dd {
+                margin-left: 40px;
+            }
+
+            .ui_tpicker_minute,
+            .ui_tpicker_hour {
+                padding-top: 4px;
+            }
+
+            .ui_tpicker_hour_label {
+                padding-top: 2px;
+            }
+
+            .form-control {
+                width: 100% !important;
+            }
+
+            @media (min-width: 992px) {
+                .col-md-10 {
+                    width: 97.333333% !important;
+                }
+            }
+
+            @media (max-width: 1000px) {
+                /* Правка таймера у календаря */
+                .ui-timepicker-div dd {
+                    margin-left: 230px;
+                }
+                .ui-timepicker-div .ui_tpicker_time {
+                    margin-bottom: 22px;
+                }
+                .ui-timepicker-div .ui_tpicker_hour {
+                    height: 80px;
+                    margin-bottom: 26px;
+                }
+                .ui-timepicker-div .ui_tpicker_minute {
+                    height: 80px;
+                }
+                .ui_tpicker_minute, .ui_tpicker_hour {
+                    padding-top: 31px;
+                }
+                .ui-timepicker-div .ui-slider.ui-slider-horizontal {
+                    height: 34px;
+                }
+
+                .pseudo-btn {
+                    right: 75px;
+                }
+
+                .select-caret {
+                    position: absolute;
+                    top: 45%;
+                    right: -62px;
+                    border-top: 30px dashed black !important;
+                    border-right: 25px solid transparent !important;
+                    border-left: 25px solid transparent !important;
+                }
+            }
+
+            @media print {
+                .pseudo-btn {
+                    right: 34px;
+                }
+
+                .select-caret {
+                    right: -20px;
+                    border-top: 4px dashed black !important;
+                    border-right: 4px solid transparent !important;
+                    border-left: 4px solid transparent !important;
+                }
+            }
+        </style>
+
+        <script src="https://crm129588.clientbase.ru/themes/clientbase/libs/jquery/jquery-3.2.1.min.js"></script>
+        <script src="https://crm129588.clientbase.ru/themes/clientbase/libs/bootstrap/js/bootstrap.min.js"></script>
+        <script src="https://crm129588.clientbase.ru/mobile/ui/lib/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="https://crm129588.clientbase.ru/themes/clientbase/css/form-basic.css">
+        <style>
+            :root {
+                --decor_color: 11, 83, 148;
+            }
+
+            body {
+                background-color: rgb(237, 237, 237);
+            }
+
+            @media (max-width: 1000px) {
+                .pseudo-btn {
+                    position: initial;
+                    height: 100%;
+                    margin-left: 85%;
+                    width: unset;
+                    right: unset;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .pseudo-btn .select-caret {
+                    position: initial;
+                    border-top: 16px dashed black !important;
+                    border-right: 10px solid transparent !important;
+                    border-left: 10px solid transparent !important;
+                }
+
+                input[type=checkbox], input[type=radio] {
+                    width: 26px;
+                    height: 26px;
+                }
+            }
+
+            /* При опции прозрачности */
+            
+
+        </style>
+    
+
+    <style>
+    
+    .k_field_name {
+        font-size: 14px;
+        font-family: Arial,Arial,Helvetica,sans-serif;
+    }
+
+    .k_qst_group {
+        font-size: 14px;
+        font-family: Arial,Arial,Helvetica,sans-serif;
+    }
+
+        .k_file_url {
+            color: blue;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .k_file_url:hover {
+            color: red;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .k_file_form {
+            position: absolute;
+            width: 90px;
+            height: 19px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .k_file_form2 {
+            opacity: 0;
+        }
+
+        .k_file_form2 input {
+            opacity: 0;
+            filter:alpha(opacity=0);
+            font-size: 60px;
+            cursor: pointer;
+            width: 200px;
+        }
+
+        @-moz-document url-prefix() {
+            .k_file_form2 input {
+                direction: rtl;
+                width: auto;
+            }
+        }
+
+        @media all and (-webkit-min-device-pixel-ratio:0) {
+            .k_file_form2 input {
+                direction: rtl;
+                width: auto;
+            }
+        }
+
+        .k_upload_progress_img {
+            background: url('https://crm129588.clientbase.ru/images/upload_progress.gif') no-repeat top left;
+            width:14px;
+            height:14px;
+            display: inline-block;
+            outline: none;
+        }
+    
+    </style>
+
+    
+
+    <script>
+        var k_form_rand_130=Math.random()+'_'+(new Date()).getTime(); // Уникальный id формы, используется в файлах и для получения ответа анкеты
+        var k_upload_in_progress=0;
+        var k_answer_hide_form130=1;
+        var k_was_submited130=0;
+        var k_130_curr_hash = '';
+        var k_link_behavior = 1;
+
+        
+
+        
+
+        
+
+        
+        // Загрузка файла
+        var k_upload_files_list;
+
+        function k_add_file(obj) {
+            var page_charset=window.document.charset;
+            if (!page_charset) page_charset=window.document.characterSet;
+            var i_c=obj.getAttribute('i_c');
+            var field_id=obj.getAttribute('field_id');
+            var value=obj.value;
+            var progress_span="<span class='k_upload_progress k_upload_progress_img'></span>";
+            k_upload_files_list=[];
+
+            if (obj.files) { // Новый режим многофайловость
+                var i;
+                for (i=0;i<obj.files.length;i++) {
+                    value=obj.files[i].fileName;
+                    if (typeof(value)=='undefined') value=obj.files[i].name;
+                    var new_line=$("<div class='k_upload_res' data-value='"+field_id+'_'+value+"'>"+value+progress_span+"</div>");
+                    var m_p =document.getElementById('add_file_url'+i_c);
+                    $(new_line).insertBefore(m_p);
+                    var f_info=new Object();
+                    f_info.name=value;
+                    f_info.obj=new_line;
+                    f_info.field_id=field_id;
+                    k_upload_files_list.push(f_info);
+                }
+            } else {  // Старый режим
+                // Если указан полный путь оставляем только имя файла
+                var last_slash=-1;
+                var last_slash_p1=0;
+                var last_slash_p2=-1;
+                while (1)
+                {
+                    last_slash_p2=value.indexOf('\\',last_slash_p1);
+                    if (last_slash_p2==-1) break;
+                    last_slash_p1=last_slash_p2+1;
+                    last_slash=last_slash_p2;
+                }
+                if (last_slash!=-1)
+                {
+                    value=value.substr(last_slash+1,1024*1024);
+                };
+                var new_line=$("<div class='k_upload_res' data-value='"+field_id+"_"+value+">"+value+progress_span+"</div>");
+                var m_p =document.getElementById('add_file_url'+i_c);
+                $(new_line).insertBefore(m_p);
+                var f_info=new Object();
+                f_info.name=value;
+                f_info.obj=new_line;
+                f_info.field_id=field_id;
+                k_upload_files_list.push(value);
+            }
+
+            k_upload_in_progress=1;
+            document.getElementById('k_sbmt_file'+i_c).action="//crm129588.clientbase.ru/questionare.php?sel=save_file&qst_id=130&field_id="+field_id+"&page_charset="+page_charset+"&k_rand="+k_form_rand_130;
+            document.getElementById('k_sbmt_file'+i_c).submit();
+        }
+
+        function k_del_file(obj) {
+            var field_id = obj.getAttribute('field_id');
+            var f_name = obj.getAttribute('f_name');
+            var page_charset=window.document.charset;
+            if (!page_charset) page_charset=window.document.characterSet;
+            document.getElementById('k_sbmt_file_130_'+field_id).action='https://localhost/cb_distr/questionare.php?sel=del_file&qst_id=130&field_id='+field_id+'&f_name='+encodeURIComponent(f_name)+'&page_charset='+page_charset+'&k_rand='+k_form_rand_130;
+            document.getElementById("k_sbmt_file_130_"+field_id).submit();
+            $('[data-value = "'+field_id+"_"+f_name+'"]').remove();
+            var was_upload = +document.getElementById('k_sbmt_file_130_'+field_id).getAttribute('was_upload');
+            document.getElementById('k_sbmt_file_130_'+field_id).setAttribute('was_upload', was_upload - 1);
+        }
+    
+
+        function k_save_qst130()
+        {
+            k_answer_hide_form130=1;
+            var page_charset=window.document.charset;
+            if (!page_charset) page_charset=window.document.characterSet;
+
+            if (typeof(custom_save_qst130) == 'function') {
+                if (!custom_save_qst130()) return ;
+            }
+
+            if (k_was_submited130) return;
+            k_was_submited130=1;
+            document.getElementById('k_savebutton130').disabled=true;
+            document.getElementById('k_savebutton130').style.cursor='default';
+
+            var qst_form=document.createElement('form');
+            qst_form.setAttribute('enctype', 'multipart/form-data');
+            qst_form.setAttribute('action',  '//crm129588.clientbase.ru/questionare.php?page_charset='+page_charset+'&ts'+new Date().getTime());
+            qst_form.setAttribute('target',  'k_frame_upload_130');
+            qst_form.setAttribute('method',  'post');
+            document.body.appendChild(qst_form);
+            var qst_input;
+            var utm_href = window.location.search;
+            qst_input=document.createElement('input');qst_input.setAttribute('type','hidden');qst_input.setAttribute('name','utm_href');qst_form.appendChild(qst_input);
+            qst_input.value=utm_href;
+
+            qst_input=document.createElement('input');qst_input.setAttribute('type','hidden');qst_input.setAttribute('name','k_input_field_130_20420');qst_form.appendChild(qst_input);
+qst_input.value=document.getElementById('k_input_field_130_20420').value;
+qst_input=document.createElement('input');qst_input.setAttribute('type','hidden');qst_input.setAttribute('name','k_input_field_130_20430');qst_form.appendChild(qst_input);
+qst_input.value=document.getElementById('k_input_field_130_20430').value;
+;
+
+            if(k_130_curr_hash != '') {
+                qst_input=document.createElement('input');qst_input.setAttribute('type','hidden');qst_input.setAttribute('name','hash');qst_form.appendChild(qst_input);
+                qst_input.value=k_130_curr_hash;
+            } else {
+                if(document.location.href.split('hash=')[1]) {
+                    if(document.location.href.split('hash=')[1].split('.').length>1) {
+                        qst_input=document.createElement('input');qst_input.setAttribute('type','hidden');qst_input.setAttribute('name','hash');qst_form.appendChild(qst_input);
+                        qst_input.value=document.location.href.split('hash=')[1].split('.')[0];
+                    }
+                }
+            }
+
+            qst_input=document.createElement('input');qst_input.setAttribute('type','hidden');qst_input.setAttribute('name','k_rand_130');qst_form.appendChild(qst_input);
+            qst_input.value=k_form_rand_130;
+            qst_input=document.createElement('input');qst_input.setAttribute('type','hidden');qst_input.setAttribute('name','sel');qst_form.appendChild(qst_input);
+            qst_input.value='save';
+            qst_form.submit();
+            document.body.removeChild(qst_form);
+        }
+
+        function k_save_resp130(event)
+        {
+            if (document.getElementById('k_frame_upload_130').src=='') return ; // Выходим если загрузки не было
+
+            var page_charset=window.document.charset;
+            if (!page_charset) page_charset=window.document.characterSet;
+            if (k_upload_in_progress)
+                { // Загрузка файлов
+                var obj=event.target; if (!obj) obj=event.srcElement;
+                // Убираем значек загрузки
+                $('.k_upload_progress').removeClass('k_upload_progress_img');
+                // Необходима проверка - загружен ли файл
+                for (var i = 0; i < k_upload_files_list.length; i++)
+                    {
+                        var f_name=k_upload_files_list[i].name;
+                        var f_obj =k_upload_files_list[i].obj;
+                        var rnd_sess=Math.floor(Math.random()*10000);
+                        var ss = document.createElement('script');
+                        ss.src="//crm129588.clientbase.ru/questionare.php?sel=test_upload&qst_id=130&k_rand="+k_form_rand_130+"&k_resp="+rnd_sess+"&f_name="+f_name+"&page_charset="+page_charset;
+                        ss.setAttribute('i_pos',i);
+                        ss.setAttribute('rnd_sess',rnd_sess);
+                        var done = false;
+                        ss.onload=ss.onreadystatechange=function(){
+                            if ( !done && (!this.readyState || this.readyState === 'loaded' || this.readyState === 'complete') )
+                                {
+                                    done = true;
+                                    var i=this.getAttribute('i_pos');
+                                    var rnd_sess=this.getAttribute('rnd_sess');
+                                    var f_name=k_upload_files_list[i].name;
+                                    var f_obj =k_upload_files_list[i].obj
+                                    var field_id =k_upload_files_list[i].field_id;
+                                    eval("var data=k_resp"+rnd_sess+";");
+                                    if (data.indexOf(' uploaded.')!=-1)
+                                    {
+                                        var size = parseInt(data)+'';
+                                        size=size.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
+                                        // Отображем размер
+                                        f_obj.find('.k_upload_progress').html(" - "+size+" B" +
+                                                " <a href='' onclick='k_del_file(this); return false;' field_id='"+field_id+"' f_name='"+f_name+"'>"+
+                                                "<img alt='удалить' title='Удалить файл' src='images/b_drop.png' border='0'></a>");
+                                        var was_upload = +document.getElementById('k_sbmt_file_130_'+field_id).getAttribute('was_upload');
+                                        document.getElementById('k_sbmt_file_130_'+field_id).setAttribute('was_upload', was_upload + 1);
+                                    }
+                                    else
+                                    {
+                                        f_obj.find('.k_upload_progress').html(" - Провалено");
+                                    }
+
+                                    ss.onload = ss.onreadystatechange = null;
+                                    document.body.removeChild(ss);
+                                }
+                            }
+                        document.body.appendChild(ss);
+                        }
+                k_upload_in_progress=0;
+                return ;
+                }
+            if (document.getElementById('k_frame_upload_130').getAttribute('second_load'))
+            {
+            if (!k_was_submited130) return;
+            k_was_submited130=0;
+            //document.getElementById('k_savebutton130').style.display='none';
+            document.getElementById('k_savebutton130').disabled=false;
+            if (typeof(custom_qst_res130) == 'function') {
+                custom_qst_res130();
+                }
+                else
+                {
+                // Получаем результат формы
+                var ss = document.createElement('script');
+                ss.src="//crm129588.clientbase.ru/questionare.php?sel=get_answer&qst_id=130&k_rand="+k_form_rand_130;
+                var done = false;
+                ss.onload=ss.onreadystatechange=function(){
+                    if ( !done && (!this.readyState || this.readyState === 'loaded' || this.readyState === 'complete') )
+                        {
+                        done = true;
+
+                        try {
+                            var data = JSON.parse(k_answer130);
+                        } catch (e) {
+                            var data = k_answer130;
+                        }
+
+                        delete k_answer130;
+
+                        if (data.error !== undefined)
+                            {
+                                $('#k_qst_err_res_130').html('');
+                                if (data.error != ' ')
+                                    $('#k_qst_err_res_130').append(data.error);
+                                data = false;
+                                k_answer_hide_form130 = 0;
+                                document.getElementById('k_savebutton130').style.display = '';
+                            }
+                        else if (data !== undefined && data != '' && data != ' ')
+                            {
+                                if (data != ' ')
+                                    $('#k_qst_res_130').append(data);
+                                    document.getElementById('k_savebutton130').style.display='';
+                            }
+                        else
+                            {
+                                //document.getElementById('k_qst_res_130').innerHTML='Информация успешно сохранена. Спасибо!';
+                            }
+                        if (k_answer_hide_form130)
+                            {
+                                //обработка ответ, если в нем есть переменные
+                                var new_qst_text = 'Информация успешно сохранена. Спасибо!';
+                                $.ajax({
+                                    method: 'POST',
+                                    url: '//crm129588.clientbase.ru/questionare.php',
+                                    async: false,
+                                    data: { qst_text: new_qst_text,sel: 'get_success_message',qst_id:'130' }
+                                    })
+                                    .done(function( msg ) {
+                                        new_qst_text = msg ;
+                                    });
+
+                                document.getElementById('k_qst_130').style.display='none';
+                                location.href='#qst_res_link130';
+                                if ($('#k_qst_res_130').text()=='') document.getElementById('k_qst_res_130').innerHTML=new_qst_text;
+                            }
+
+                        ss.onload = ss.onreadystatechange = null;
+                        document.body.removeChild(ss);
+                        }
+                    }
+                document.body.appendChild(ss);
+                }
+            document.getElementById('k_frame_upload_130').src=''; // Четвертый уровень защиты от повторной загрузки
+            }
+            else
+            document.getElementById('k_frame_upload_130').setAttribute('second_load',1);
+        }
+
+        $(function(){
+            if(document.getElementById('k_frame_upload_130').onload == null) {
+                $('#k_frame_upload_130').on('load', function(event) { k_save_resp130(event); });
+            }
+
+              if (window.k_qst130_def_value20420) $('#k_input_field_130_20420').val(window.k_qst130_def_value20420);
+  if (window.k_qst130_def_value20430) $('#k_input_field_130_20430').val(window.k_qst130_def_value20430);
+  if (window.k_qst130_def_value20440) $('#k_input_field_130_20440').val(window.k_qst130_def_value20440);
+
+        });
+    </script>
+
+    
+
+    <iframe name="k_frame_upload_130" id="k_frame_upload_130" style="width:1px;height:1px;display:none;" onload="k_save_resp130(event);" loading="lazy" class="lazyload"></iframe>
+
+    <script>
+    document.getElementById('k_frame_upload_130').src='';
+    </script>
+
+        
+
+    <div align="center" style="color:red; padding-bottom:15px;" id="k_qst_err_res_130"></div>
+
+    <div class="form-basic_wrapper">
+        <div class="well form-basic" id="k_qst_130">
+
+        <span class="form-basic__color-stripe"></span>
+
+            <div class="form-basic__header-info">
+
+                <h3 class="form-basic__title">Отчет по заданию №1</h3>
+                
+
+            </div>
+
+        <div class="form-group row">
+<label class="control-label k_field_name">Имя</label>
+<div class="form-field">
+    <input type="text" class="form-control" id="k_input_field_130_20420" placeholder="" value="">
+</div>
+</div>
+
+<div class="form-group row">
+<label class="control-label k_field_name">Телефон</label>
+<div class="form-field">
+    <input type="text" class="form-control" id="k_input_field_130_20430" placeholder="" value="">
+</div>
+</div>
+
+<div class="form-group row">
+<label class="control-label k_field_name">Файлы</label>
+<div class="form-field">
+    
+                <span class="k_file_url" id="add_file_url_130_20440">
+                    <div class="k_file_form">
+                    <form method="post" enctype="multipart/form-data" action="https://crm129588.clientbase.ru/questionare.php?qst_id=130&amp;k_rand=" id="k_sbmt_file_130_20440" was_upload="0" target="k_frame_upload_130">
+                    <input type="hidden" name="csrf" value="">
+                    <div class="k_file_form2">
+                    <input type="file" name="k_lnk_add_file[]" size="1" onclick="if (k_upload_in_progress) {alert('Файл еще не загружен, дождитесь загрузки файла.');return false;}" onchange="k_add_file(this);" i_c="_130_20440" field_id="20440" multiple="multiple">
+                    </div>
+                    </form>
+                    </div>
+                    Добавить
+                </span>
+            
+</div>
+</div>
+
+        
+
+        <div class="form-group row" align="center">
+            <input type="button" class="btn btn-primary k_savebutton" id="k_savebutton130" onclick="if (k_upload_in_progress) alert(&quot;Файл еще не загружен, дождитесь загрузки файла.&quot;); else k_save_qst130();return false;" value="Отправить">
+        </div>
+
+        </div>
+    </div>
+
+    <div class="form-copyright">
+        <a class="form-copyright__link" href="">
+        </a>
+        <a class="form-copyright__link" href="">
+        </a>
+    </div>
+
+    <div align="center">
+        <a name="qst_res_link130"></a>
+        <div id="k_qst_res_130"></div>
+    </div>
+
+<!-- BEGIN OF CUSTOM JAVASCRIPT --><!-- END OF CUSTOM JAVASCRIPT -->
+                        </div>
 
 
 <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
